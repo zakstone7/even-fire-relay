@@ -43,8 +43,9 @@ Turn on **use relay** per Raw trigger. Check it's live by opening
 
 ## Cost
 
-Runs on **Netlify's free tier** (functions included). A personal relay stays
-well within it.
+Runs on **Netlify's free tier**: **125,000 function invocations/month** (plus
+100 hrs runtime and 100 GB bandwidth). A personal relay — one call per trigger
+fire — stays far under that, so in practice it's free.
 
 ## API
 
