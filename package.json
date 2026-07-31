@@ -1,0 +1,13 @@
+{
+  "name": "even-fire-relay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-hosted HTTP relay for the Fire Even G2 plugin — one-click deploy to Netlify.",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

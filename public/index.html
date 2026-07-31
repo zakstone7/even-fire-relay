@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Fire relay</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; max-width: 40rem; margin: 3rem auto; padding: 0 1rem; color: #222; }
+  code { background: #f2f2f2; padding: 0 .3em; border-radius: 4px; }
+  a { color: #0a7d33; }
+</style>
+<h1>Fire relay ✓</h1>
+<p>This is a self-hosted relay for the
+  <a href="https://github.com/zakstone7/even-fire">Fire</a> Even G2 plugin.
+  It’s running.</p>
+<ul>
+  <li>Health check: <a href="/health"><code>/health</code></a> → <code>{"ok":true}</code></li>
+  <li>Proxy endpoint: <code>POST /fire</code> (needs your <code>RELAY_SECRET</code>)</li>
+</ul>
+<p>In the Fire app → Relay, set this site’s URL and the <code>RELAY_SECRET</code>
+  you chose during deploy.</p>

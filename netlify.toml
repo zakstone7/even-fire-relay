@@ -1,0 +1,19 @@
+# Netlify config for the Fire self-hosted relay.
+#
+# One tap on the "Deploy to Netlify" button (see README) clones this repo into
+# your own GitHub + Netlify account and deploys it. There is no site to build —
+# just the serverless function in netlify/functions — so the build command is a
+# no-op and there is no publish directory of static files.
+
+[build]
+  command = "true"
+  functions = "netlify/functions"
+  # A tiny placeholder is published so Netlify has a site root; all real routes
+  # (/fire, /health) are served by the function via its config.path.
+  publish = "public"
+
+# During a Deploy-button setup, Netlify prompts for these and stores them as
+# the site's environment variables. RELAY_SECRET is the shared secret the app
+# sends as `Authorization: Bearer …`.
+[template.environment]
+  RELAY_SECRET = "A long random secret (32+ chars) that authorizes the Fire app to use your relay. Generate one in a password manager and keep it — you'll paste it into the app too."
